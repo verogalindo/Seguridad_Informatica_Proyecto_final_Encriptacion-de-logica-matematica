@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title> Encriptación de logica matemática </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet " />  <!-- Aquí va toda la edicion de css -->
+    <script src="index.js" type="text/javascript" defer></script> <!-- Aquí va todo el codigo -->
+	
+</head>
+<body>
+
+<h1><center> <font size=10 color= 03F914> <strong> ENCRIPTACIÓN DE LÓGICA MATEMATICA </strong></font><center></h1>
+<h4><center> <font size=5 color= black> Elaborado por: Rosa María G.R. y Veronica F.G. </font> </center></h4>
+
+<p>
+.
+
+</p>
+<p>
+.
+
+</p>
+
+
+<font size=6 color= 239F2B> <strong> ¿En qué consiste el algoritmo de encriptación? </strong></font>
+
+<p><font size=5 color=black> <strong> Este algoritmo de encriptación, consiste en llevar acabo una ecuación para poder saber cual es la letra que oculta. Se ocupan 27 posiciones, todas las letras del abecedario pero
+de manera inversa, esto que quiere decir, que si la Z es la ultima letra ahora será la primera, la Y será la segunda y así sucesivamente hasta que la A sea la ultima [Z-A].
+Siguiendo la siguiente ecuación: </strong></font>
+<br></br>
+<font size=7 color=F2A20E> <strong><center><i> Y - n =() mod 27 + 2  </i></center></strong></font>
+<br></br>
+<p><font size=5 color=black> <strong> --> Donde<font size=6 color=F2A20E> <strong><i> Y </i></strong></font> es igual a la posición de la letra que se va a encriptar. 
+Ejemplo: Y = A = 27, Y = B = 26...
+<br></br>
+<p><font size=5 color=black> <strong> --> Donde<font size=6 color=F2A20E> <strong><i> n </i></strong></font> es igual al digito clave para encriptar las posiciones. 
+<br></br>
+<p><font size=5 color=black> <strong> --> Donde<font size=6 color=F2A20E> <strong><i> 2 </i></strong></font> será el digito que se le sumara a los digitos anteriores (Este nunca cambia).
+<br></br>
+<p><font size=5 color=black> <strong> --> Donde<font size=6 color=F2A20E> <strong><i> Z </i></strong></font> será el resultado final de la ecuación y será la que se sustitira por el valor de la posición.
+<br></br>
+<font size=6 color= 239F2B> <strong> Procedimiento: </strong></font>
+<p><font size=5 color=black> <strong> --> Paso 1: Se pedirá al usuario el número de posiciones a recorrer (n), el rango solo podrá ser de 1 a 7.</strong></font></p>
+<p><font size=5 color=black> <strong> --> Paso 2: Se realizará una resta de la posición de la letra ingresada menos la posición ingresada por el usuario. </strong></font></p>
+<p><font size=5 color=black> <strong> --> Paso 3: Después se sacará el mod de 27 de acuerdo con el resultado anterior. </strong></font></p>
+<p><font size=5 color=black> <strong> --> Paso 4: Por último, se realizará una suma al resultado anterior de 2 posiciones. </strong></font></p>
+
+<font size=6 color= 239F2B> <strong> Ejemplo: </strong></font>
+<p><font size=5 color=yellow> <strong> --> Paso 1: Solicitar (n) = <font size=5 color=F9349C> <strong><i> 5 </i></strong></font>
+<p><font size=5 color=yellow> <strong> --> Paso 2: Restar posición actual menos (n): 
+<center> <font size=5 color= white><i>  (H) = 20 -5 = 15 </i></font> </center>
+<center> <font size=5 color= white><i>  (o) = 12 -5 = 7 </i></font> </center>
+<center> <font size=5 color= white><i>  (l) = 16 -5 = 11  </i></font> </center>
+<center> <font size=5 color= white><i>  (a) = 27 -5 = 22 </i></font> </center>
+<center> <font size=5 color= white><i>  (m) = 15 -5 = 10 </i></font> </center>
+<center> <font size=5 color= white><i>  (u) = 6 -5 = 1 </i></font> </center>
+<center> <font size=5 color= white><i>  (n) = 14 -5 = 9 </i></font> </center>
+<center> <font size=5 color= white><i>  (d) = 24 -5 = 19 </i></font> </center>
+<center> <font size=5 color= white><i>  (o) = 12 -5 = 7 </i></font> </center>
+<p><font size=5 color=yellow> <strong> --> Paso 3: Sacar mood27 del resultado anterior:
+<center> <font size=5 color= white><i>  (H) = 15 mood27 = 15 </i></font> </center>
+<center> <font size=5 color= white><i>  (o) = 7 mood27 = 7</i></font> </center>
+<center> <font size=5 color= white><i>  (l) = 11 mood27 =11 </i></font> </center>
+<center> <font size=5 color= white><i>  (a) = 22 mood27 = 22 </i></font> </center>
+<center> <font size=5 color= white><i>  (m) = 10 mood27 = 10 </i></font> </center>
+<center> <font size=5 color= white><i>  (u) = 1 mood27 = 1 </i></font> </center>
+<center> <font size=5 color= white><i>  (n) = 9 mood27 = 9 </i></font> </center>
+<center> <font size=5 color= white><i>  (d) = 19 mood27 = 19 </i></font> </center>
+<center> <font size=5 color= white><i>  (o) = 7 mood27 = 7 </i></font> </center>
+<p><font size=5 color=yellow> <strong> --> Paso 4: Sumar dos posiciones al resultado anterior: 
+<center> <font size=5 color= white><i>  (H) = 15 + 2 = 17 = <font size=5 color= red><i> k </font></i></font> </center>
+<center> <font size=5 color= white><i>  (o) = 7 + 2 = 9 = <font size=5 color= red><i> r </font  </i></font> </center>
+<center> <font size=5 color= white><i>  (l) = 11 + 2 = 13 = <font size=5 color= red><i> ñ </font</i></font> </center>
+<center> <font size=5 color= white><i>  (a) = 22 + 2 = 24 = <font size=5 color= red><i> d </font</i></font> </center>
+<center> <font size=5 color= white><i>  (m) = 10 + 2 = 12 = <font size=5 color= red><i> o </font</i></font> </center>
+<center> <font size=5 color= white><i>  (u) = 1 + 2 = 3 = <font size=5 color= red><i> x </font</i></font> </center>
+<center> <font size=5 color= white><i>  (n) = 9 + 2 = 11 = <font size=5 color= red><i> p </font</i></font> </center>
+<center> <font size=5 color= white><i>  (d) = 19 + 2 = 21  = <font size=5 color= red><i> g </font</i></font> </center>
+<center> <font size=5 color= white><i>  (o) = 7 + 2 = 9 = <font size=5 color= red><i> r </font</i></font> </center>
+<p><font size=5 color=green> <strong> Con la siguiente calculadora podrá comprobar el elgoritmo de encriptación: 
+   
+<!-- Aquí comienza calcular  -->
+
+<br></br>
+    <main>
+        <h1><center><Strong><font size=7 color= F2F903><i>ENCRIPTAR MENSAJE</i></font></strong></center></h1>
+        <form id="cifrador" autocomplete="off">
+            <input id="input-original" spellcheck="false" placeholder="Ingrese el texto a encriptar y presiones la tecla Enter" type="text" name="text">
+        </form>
+        <div id="resultado"></div>
+        <div class="rango">
+            <input id="rango" type="range" value="10" min="1" max="7" oninput="this.nextElementSibling.value = this.value">
+            <output><FONT color=white>n= 7</output>
+        </div>
+    </main>
+</body>
+</html>
